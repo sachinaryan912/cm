@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash</title>
+          <link rel="stylesheet"
+href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <!--bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  
+
+  <!--bootstrap end-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/lstyle.css">
+</head>
+
+ 
+    
+    <body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper" >
+        <div style="height: 1vh; z-index:-10;">
+       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 320"><path fill="#8907EF" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,250.7C384,277,480,299,576,261.3C672,224,768,128,864,112C960,96,1056,160,1152,160C1248,160,1344,96,1392,64L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        
+    </div>
+
+       
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-dark topbar mb-4 static-top" >
+
+                
+                    
+                    <a class="navbar-brand" href="#" style="font-family: 'Paytone One';">Keep your notes</a>
+
+                    
+
+                    
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                       
+                    
+
+                       
+
+                        
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <img class="img-profile rounded-circle"
+                                    src="../images/undraw_profile.svg" width="30px">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                
+                                
+                                
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+                
+                
+                
+               
+              
+             
+            
+           
+          
+         
+        
+            </div>
+            
+            
+        </div>
+        
+        
+        
+    </div>
+
+    <div class="container">
+
+    <div class="row">
+    <div class="header mt-3 mb-4 col">
+    
+    <h4>DASHBOARD</h4>
+    
+    </div>
+
+    <div class="col mt-2" >
+
+   <div class="card" style="height: 68%; border: none; background: #fff;">
+    
+    <div class="card-header">
+    <p>Total files: <span style="font-weight: bold; color: blueviolet;">18</span></p>
+    </div>
+    
+   </div>
+    
+    </div>
+    
+    </div>
+    
+ <div class="row">
+  <div class="col">
+  <div class="card" id="c1" onclick="up()">
+
+   <div class="card-body">
+   
+   <div>
+   <i class="fas fa-file-upload"></i>
+   
+   </div>
+   </div>
+
+ 
+
+  </div>
+  <div class="mt-2 text-center" style="font-weight: bold;"><p>Upload</p></div>
+
+  
+  
+  </div>
+  <div class="col">
+  <div class="card" id="c2" onclick="mf()">
+
+  <i class="fas fa-folder"></i>
+
+  
+  
+  </div>
+   <div class="mt-2 text-center" style="font-weight: bold;"><p>My files</p></div>
+  
+  </div>
+  
+  
+</div>
+    
+    
+    </div>
+
+
+    <div id="log">
+    <a href="#" class="btn" id="btnlog">Logout</a>
+    </div>
+    
+   
+    
+</body>
+
+
+<script>
+
+function up() {
+    location.href = "upload.html";
+}
+
+function mf() {
+    location.href = "myfiles.html";
+}
+
+
+</script>
+
+</html>
